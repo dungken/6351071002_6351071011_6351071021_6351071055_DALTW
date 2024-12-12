@@ -9,7 +9,7 @@ export const getAuthHeader = () => {
 
 export const GetCategoriesService = async () => {
     try {
-        const response = await axios.get('http://localhost:5289/api/Categories');
+        const response = await axios.get('https://opham414-001-site1.jtempurl.com/api/Categories');
         return response.data;
     } catch (error) {
         console.error("API call failed:", error);
@@ -20,7 +20,7 @@ export const GetCategoriesService = async () => {
 
 export const GetProductByCatIdService = async (cateId: string) => {
     try {
-        const response = await axios.get(`http://localhost:5289/api/Products/Category/${cateId}`);
+        const response = await axios.get(`https://opham414-001-site1.jtempurl.com/api/Products/Category/${cateId}`);
         return response.data;
     } catch (error) {
         console.error("API call failed:", error);
@@ -31,7 +31,7 @@ export const GetProductByCatIdService = async (cateId: string) => {
 
 export const GetProductByIdService = async (productId: string) => {
     try {
-        const response = await axios.get(`http://localhost:5289/api/Products/${productId}`);
+        const response = await axios.get(`https://opham414-001-site1.jtempurl.com/api/Products/${productId}`);
         return response.data;
     } catch (error) {
         console.error("API call failed:", error);
@@ -41,7 +41,7 @@ export const GetProductByIdService = async (productId: string) => {
 
 export const GetProductsByCategory = async (categoryId: any) => {
     try {
-        const response = await axios.get(`http://localhost:5289/api/Products/Category/${categoryId}`);
+        const response = await axios.get(`https://opham414-001-site1.jtempurl.com/api/Products/Category/${categoryId}`);
         return response.data;
     } catch (error) {
         return (error as any).response.data;
