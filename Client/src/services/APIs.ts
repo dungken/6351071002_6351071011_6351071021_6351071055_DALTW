@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: "http://localhost:5289",
+    baseURL: "https://opham414-001-site1.jtempurl.com/",
 });
 
 api.interceptors.request.use((config) => {
